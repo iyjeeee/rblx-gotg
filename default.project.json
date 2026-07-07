@@ -1,0 +1,26 @@
+{
+  "name": "GameOfTheGenerals",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": { "$path": "src/ReplicatedStorage/Shared" },
+      "Remotes": { "$path": "src/ReplicatedStorage/Remotes" },
+      "UI": { "$path": "src/ReplicatedStorage/UI" }
+    },
+
+    "ServerScriptService": {
+      "Services": { "$path": "src/ServerScriptService/Services" }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Controllers": { "$path": "src/StarterPlayerScripts/Controllers" }
+      }
+    },
+
+    "ServerStorage": {
+      "$path": "src/ServerStorage"
+    }
+  }
+}
