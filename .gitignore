@@ -1,5 +1,5 @@
 *.rbxl
-   *.rbxlx
-   sourcemap.json
-   .vscode/
-   node_modules/
+*.rbxlx
+sourcemap.json
+.vscode/
+node_modules/
