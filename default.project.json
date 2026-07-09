@@ -5,7 +5,15 @@
 
     "ReplicatedStorage": {
       "Shared": { "$path": "src/ReplicatedStorage/Shared" },
-      "Remotes": { "$path": "src/ReplicatedStorage/Remotes" },
+      "Remotes": {
+        "$className": "Folder",
+        "Match": {
+          "$className": "Folder",
+          "SubmitSetup": { "$className": "RemoteFunction" },
+          "SubmitMove": { "$className": "RemoteFunction" },
+          "StateUpdate": { "$className": "RemoteEvent" }
+        }
+      },
       "UI": { "$path": "src/ReplicatedStorage/UI" }
     },
 
