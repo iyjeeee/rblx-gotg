@@ -12,6 +12,12 @@
           "SubmitSetup": { "$className": "RemoteFunction" },
           "SubmitMove": { "$className": "RemoteFunction" },
           "StateUpdate": { "$className": "RemoteEvent" }
+        },
+        "Matchmaking": {
+          "$className": "Folder",
+          "FindMatch": { "$className": "RemoteFunction" },
+          "CancelQueue": { "$className": "RemoteFunction" },
+          "MatchFound": { "$className": "RemoteEvent" }
         }
       },
       "UI": { "$path": "src/ReplicatedStorage/UI" }

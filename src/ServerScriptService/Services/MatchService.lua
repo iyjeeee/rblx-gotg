@@ -50,6 +50,11 @@ local function broadcastState(matchRecord: MatchRecord)
 	end
 end
 
+-- isPlayerInMatch: lets other services (like MatchmakingService) check match status before queueing.
+function MatchService.isPlayerInMatch(player: Player): boolean
+	return playerToMatch[player] ~= nil
+end
+
 -- createMatch: registers a new match between two players, returns the new matchId.
 function MatchService.createMatch(playerA: Player, playerB: Player): string
 	local matchId = HttpService:GenerateGUID(false)
